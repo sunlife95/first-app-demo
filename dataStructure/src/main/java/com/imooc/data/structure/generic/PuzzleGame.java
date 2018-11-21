@@ -1,4 +1,4 @@
-package com.imooc.data.structure;
+package com.imooc.data.structure.generic;
 
 public class PuzzleGame {
     public static void main(String[] args) {
