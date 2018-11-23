@@ -1,0 +1,8 @@
+你好哈哈哈
+#include 文件测试1.txt;
+#include 文件测试2.txt;
+
+真的
+weradfasdfsadf 
+adffsdfd qwer 
+asd fas fqwe  sd 

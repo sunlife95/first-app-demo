@@ -4,7 +4,7 @@ import java.io.*;
 
 public class IncludeFile {
     public static void main(String[] args) {
-        getFileContent("C:\\Users\\zmn-E330\\Desktop\\文件测试.txt");
+        getFileContent(System.getProperty("user.dir")+"\\dataStructure\\resource\\文件测试.txt");
     }
 
     private static void getFileContent(String filepath) {
