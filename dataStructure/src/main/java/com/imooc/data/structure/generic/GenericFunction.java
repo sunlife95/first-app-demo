@@ -1,7 +1,6 @@
 package com.imooc.data.structure.generic;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class GenericFunction {
     public static <AnyType extends Comparable<? super AnyType>> AnyType findMax(AnyType[] arr) {
