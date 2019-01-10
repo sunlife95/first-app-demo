@@ -3,7 +3,7 @@ package com.imooc.data.structure.generic;
 public class PermuteUtil {
 
     public static void main(String[] args) {
-        permute("abc");
+        permute("abc阿福");
     }
     public static void permute(String str) {
         permute(str.toCharArray(),0,str.length());
