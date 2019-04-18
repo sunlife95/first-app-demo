@@ -1,30 +1,31 @@
 package com.imooc.data.structure.list.linkedList;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-        List<String> list = new LinkedList<>();
+//        List<String> list = new LinkedList<>();
+        MyLinkedList<String> list = new MyLinkedList();
         list.add("1");
         list.add("2");
         list.add("3");
 
         list.add("4");
         list.add("5");
-        System.out.println(list.get(0));
-        System.out.println(list.get(1));
-        System.out.println(list.get(2));
-        System.out.println(list.get(3));
-        System.out.println(list.get(4));
-        System.out.println("---------------------");
-        System.out.println(list.size());
-        System.out.println("---------------------");
-        System.out.println(list.get(0));
-        System.out.println(list.get(1));
-        System.out.println(list.get(2));
-        System.out.println(list.get(3));
-        System.out.println(list.get(4));
+
+
+        Iterator<String> iterator = list.iterator();
+
+        while (iterator.hasNext()){
+            String str = iterator.next();
+            System.out.println(str);
+            if ( str.equals("2")) {
+                iterator.remove();
+            }
+            System.out.println(str);
+        }
 
 
         com.imooc.data.structure.list.linkedList.LinkedList<String > testList = new com.imooc.data.structure.list.linkedList.LinkedList<>();
