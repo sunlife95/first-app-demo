@@ -118,5 +118,12 @@ public class MyArrayList<AnyType> implements Iterable<AnyType> {
         public void remove() {
             list.remove(--current);
         }
+
+        public void addAll(Iterable<? extends AnyType> items) {
+            Iterator<? extends AnyType> iterator = items.iterator();
+            while (iterator.hasNext()) {
+                add(iterator.next());
+            }
+        }
     }
 }
