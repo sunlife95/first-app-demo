@@ -113,6 +113,21 @@ public class MyLinkedList<AnyType> implements Iterable<AnyType> {
         return oldVal;
     }
 
+    public void removeAll(Iterable<? extends AnyType> items) {
+        AnyType item,element;
+        Iterator<? extends AnyType> iterItems = items.iterator();
+
+        while (iterItems.hasNext()){
+            item = iterItems.next();
+            Iterator<? extends AnyType> iterList = iterator();
+            while ( iterList.hasNext()){
+                element = iterList.next();
+                if (element.equals(item))
+                    iterList.remove();
+            }
+        }
+    }
+
 
     private int theSize;
     private int modCount = 0;
