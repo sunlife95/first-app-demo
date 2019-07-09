@@ -1,7 +1,5 @@
 package com.imooc.data.structure.list.linkedList;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -134,7 +132,6 @@ public class MyLinkedList<AnyType> implements Iterable<AnyType> {
     private Node<AnyType> beginMarker;
     private Node<AnyType> endMarker;
 
-    @NotNull
     @Override
     public Iterator<AnyType> iterator() {
         return new LinkedListIterator();

@@ -1,7 +1,6 @@
 package com.imooc.data.structure.list.ArrayList;
 
 import com.sun.org.apache.bcel.internal.generic.ANEWARRAY;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -87,7 +86,6 @@ public class MyArrayList<AnyType> implements Iterable<AnyType> {
         return removedItem;
     }
 
-    @NotNull
     @Override
     public Iterator<AnyType> iterator() {
 
