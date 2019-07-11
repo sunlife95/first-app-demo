@@ -131,7 +131,7 @@ public class BinarySearchTree<AnyType extends Comparable<? super AnyType>> {
             t.right = remove( t.element, t.right);
         } else {
             // 相等，只有一个子节点，返回子节点，上层递归会将该子节点作为其子节点，跳过要删除的元素
-            t = ( t.left != null ) ? t.left : t.right;
+            t = (t.left != null) ? t.left : t.right;
         }
         return t;
 
