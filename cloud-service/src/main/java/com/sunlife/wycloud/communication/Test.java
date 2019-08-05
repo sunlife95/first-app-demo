@@ -28,7 +28,7 @@ public class Test {
     public static void main(String[] args) throws Exception {
         DefaultHttpClient httpClient = new DefaultHttpClient();
 //        String url = "https://api.netease.im/nimserver/user/refreshToken.action";
-        String url = getInfoUrl;
+        String url = createUrl;
         HttpPost httpPost = new HttpPost(url);
 
         String appKey = "11cb0782c9df67d7c58ef31595d71073";
@@ -46,7 +46,7 @@ public class Test {
 
         // 设置请求的参数
         List<NameValuePair> nvps = new ArrayList<NameValuePair>();
-        nvps.add(new BasicNameValuePair("accids", "['bjcs3']"));
+        nvps.add(new BasicNameValuePair("accid", "123"));
         httpPost.setEntity(new UrlEncodedFormEntity(nvps, "utf-8"));
 
         // 执行请求
