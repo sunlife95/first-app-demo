@@ -12,6 +12,7 @@
 		<module>model</module>
         <module>zookeeper</module>
         <module>dataStructure</module>
+        <module>designpatterns</module>
     </modules>
 
 	<!--修改成pom-->
