@@ -54,7 +54,7 @@ public class Solution {
         Short s = new Short("2");
 
 
-        
+
         System.out.println(s.equals((short)2));
     }
 }

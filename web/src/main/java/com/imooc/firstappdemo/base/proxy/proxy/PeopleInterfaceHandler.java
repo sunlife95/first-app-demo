@@ -8,10 +8,13 @@ public class PeopleInterfaceHandler  implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        if (method.getName().equals("eat")){
+
+        String eat = "eat";
+        if (method.getName().equals(eat)){
             return "eat "+ Arrays.toString(args);
         }
-        if (method.getName().equals("talk")){
+        String talk = "talk";
+        if (method.getName().equals(talk)){
             System.out.println("talk with "+Arrays.toString(args));
             return proxy;
         }
