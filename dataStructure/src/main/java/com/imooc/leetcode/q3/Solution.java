@@ -52,6 +52,9 @@ public class Solution {
         System.out.println(lengthOfLongestSubstring("abcabcbb"));
 
         Short s = new Short("2");
+
+
+        
         System.out.println(s.equals((short)2));
     }
 }
